@@ -1,0 +1,236 @@
+﻿<!doctype html>
+
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>Login / Register</title>
+
+<link href="css/main.css"  rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script> 
+    <script src="jquery.masonry.min.js"></script> 
+    <script src="jquery.imagesloaded.min.js"></script> 
+
+</head>
+	<div style="position: fixed; bottom: 170px; right: 15px; ">
+		<a href="티셔츠.html"><img src="sidemenu/home.png" title="홈으로"></a>
+	</div>
+	<div style="position: fixed; bottom: 138px; right: 15px; ">
+		<a href="#content"><img src="sidemenu/serch.png" title="검색"></a>
+	</div>
+	<div style="position: fixed; bottom: 106px; right: 15px; ">
+		<a href="Register.html"><img src="sidemenu/key.png" title="로그인"></a>
+	</div>
+	<div style="position: fixed; bottom: 74px; right: 15px; ">
+		<a href="cart.html"><img src="sidemenu/cart.png" title="장바구니"></a>
+	</div>
+	<div style="position: fixed; bottom: 42px; right: 15px; ">
+		<a href="#"><img src="sidemenu/up.png" title="위로 가기"></a>
+	</div>
+	<div style="position: fixed; bottom: 10px; right: 15px; ">
+		<a href="#down"><img src="sidemenu/down.png" title="아래로 가기"></a>
+	</div>
+
+
+<body>
+
+  <div id="mainWrapper">
+
+    <header>     
+      <div id="logo">민규 홈쇼핑</div> 
+    
+      <div id="headerLinks">
+    
+ 
+       <a href="index.html" title="home">Home</a>
+       <a href="Register.html" title="Login/Register">로그인/회원가입</a>
+       <a href="cart.html" title="Cart">장바구니</a>	
+      </div>
+    </header>
+  
+    <section id="offer">
+      <div id="flower"><img class="flower" src="minion.jpg"  onmouseover='this.src="minion.jpg"' onmouseout='this.src="minion.jpg"' style="position:absolute; width:200px; opacity:.3;" ></div>  
+    <h2>민규 홈쇼핑입니다. 많이 많이 사가세요!</h2>
+    <p>"6월 16일 OPEN"</p> 
+    </section>
+  
+    <div id="content">       
+      <section class="sidebar">
+       
+        <input type="text"  id="search"  type="search" placeholder="물건 검색" >
+        
+        <div id="menubar">
+          
+          <nav class="menu">
+            <h2>의류 쇼핑</h2>
+            <hr>
+            <ul>
+              <li><a href="티셔츠.html" title="티셔츠">티셔츠</a></li>
+          <li><a href="바지.html" title="바지">바지</a></li>
+              <li><a href="신발.html" title="신발">신발</a></li>
+             
+            </ul>
+          </nav>
+  
+          <nav class="menu">
+            <h2>식품 쇼핑</h2>
+            <hr>
+            <ul>
+              <li><a href="식류.html" title="식류">식류</a></li>
+              <li><a href="주류.html" title="주류">주류</a></li>                        
+            </ul>
+          </nav> 
+           
+            <nav class="menu">
+           <br><br><br><br>
+        
+         
+        
+<P>
+<table>
+	<tr>
+    	<td colspan="2">
+		
+    	</td>
+        <td></td>
+   	</tr>
+    <tr>
+		
+	</tr>
+    </table>
+
+
+         <hr> 
+         </nav>
+      </div>
+      
+    </section>
+    
+    <hr/><br/>
+    <form id="login"> 
+        <fieldset style="border-left-width:35px; border-left-color:rgba(220,235,250,1.00); "> 
+            <legend>로그인</legend> 
+            <table> 
+            	<tr>
+                    <td><label for="id">아이디</label></td> 
+                    <td><input type="text" id="id"  size="10"> 
+                    <td rowspan="4" colspan="4"><input type="button" onClick="reset(); 
+                    alert('아이디 또는 비밀번호를 확인하세요.');" value="Login" id="button" 
+                    style="width:100px;	height:50px;">
+                </tr> 
+                
+                <tr> 
+                    <td><label for="pw">비밀번호</label></td> 
+                    <td><input type="password" id="pw"  size="10"></td> 
+                </tr>                 
+            </table> 
+        </fieldset> 
+    </form>
+    <br>   
+<hr /> 
+    <br /> 
+    <form id="register"> 
+        <fieldset style="border-left-width:35px; border-left-color:rgba(220,235,250,1.00)"> 
+            <legend>회원가입</legend> 
+            <table> 
+            	<tr>
+                    <td><label for="id">아이디</label></td> 
+                    <td><input type="text" id="login_form"  size="10"> 
+                    <input type="button" value="중복확인" onclick="alert('사용가능합니다.');"/>						   					</td> 
+                </tr> 
+                
+                <tr> 
+                    <td><label for="pw">비밀번호</label></td> 
+                    <td><input type="password" id="pw"  size="10"></td> 
+                </tr> 
+                
+                <tr> 
+                    <td><label for="pw">비밀번호 확인</label></td> 
+                    <td><input type="password" id="re_pw"  size="10"></td> 
+                </tr> 
+              
+               <tr>
+                	<td><label for="name">이름</label></td>
+                	<td><input type="text" id="name"  size="10">
+               </tr> 
+               
+               <tr>
+               		<td><label for="age">나이</label></td>
+                    <td> <input type="text" max="100" min="1" size="10">
+                <tr>
+               		<td>성별</td>
+    				<td><input type="radio" name="gender" value="man" checked="checked">남자&nbsp;
+    				<input type="radio" name="gender" value="women">여자</td>
+                </tr>
+                
+                <tr>
+                	<td><label for="name">주소</label></td>
+                	<td><input type="text" id="name"  size="56">
+                </tr>             
+                
+                <tr>                 
+                    <td><label for="email">이메일</label></td> 
+                    <td><input type="text" name="email" size="10">&nbsp;@   			
+             			<input type="text" id="#2"  size="8" placeholder="직접입력">
+                        <select name="#">
+                 		<option value="naver.com">naver.com</option>
+                 		<option value="nate.com">nate.com</option>
+                 		<option value="hanmail.net">hanmail.net</option>
+                 		<option value="yahoo.co.kr">yahoo.co.kr</option>
+                 		<option value="hotmail.com">hotmail.com</option>
+                        <option value="gmail.com">gmail.com</option>
+                		</select>
+                        
+                 </tr> 
+                 <tr> 
+                    <td><label for="email">연락처</label></td>                
+                    <td><select name="tel1">
+    					<option value="010" selected="selected" >010</option>
+     					<option value="011">011</option>
+     					<option value="016">016</option>
+		     			<option value="017">017</option>
+     					<option value="019">019</option> 
+   						</select> -
+     					<input type="text" name="tel2" size="5" maxlength="4"> -
+     					<input type="text" name="tel3" size="5" maxlength="4">
+                </tr> 
+                <tr> 
+                    <td colspan="2" align="center"> 
+                        <input type="submit" value="가입" onClick="alert('가입성공. 로그인 후 이용 하세요.')">
+                        <input type="button" value="취소" onClick="reset();">
+                    </td> 
+                </tr> 
+            </table> 
+        </fieldset> 
+    </form>
+    <br><hr>
+</div>
+<footer>    
+	
+  <div>
+    <p>(주)민규 홈쇼핑<br>대표 : 최민규<br>FAX : 010-4171-6739<br></p>
+  </div>
+
+  <div>
+    <p>웹클라이언트 기말프로젝트</p><br>E-mail : chlalsrb859@naver.com <br>ARS 전화상담 : 010-4171-6739<br>  <br>Copyright 1999-2021 Minkyu shop</p>
+  </div>
+
+  <div class="footerlinks">
+  
+    <p><a href="https://www.instagram.com/mlng9z/" title="instagram" target="_blank">
+    <p title="인스타">민규 인스타그램</a></p>
+    <p><a href="http://cswin.skuniv.ac.kr/" title="skuniv" target="_blank">
+    <p title="게시판">서경대학교 소프트웨어학과 게시판</a></p>
+    <p><a href="https://portal.skuniv.ac.kr/" title="portal" target="_blank">
+    <p title="포탈">서경대학교 포탈</a></p>
+
+  </div>
+</footer>
+</div>
+
+</body>
+<div id="down"></div>
+
+</html>
+

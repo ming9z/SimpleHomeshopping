@@ -1,0 +1,282 @@
+@charset "utf-8";
+/* Styles */
+a:hover {
+	color: rgba(255,255,255,1.00);
+}
+/*헤더*/
+header {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+}
+/* 로고*/
+#logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 139px;
+	font-size: 23px;
+	text-align: center;
+	color: rgba(146,146,146,1.0);
+	background-color: rgba(210,225,250,1.00);
+}
+/* 헤더 링크영역 */
+#headerLinks {
+	float: left;
+	width: calc( 100% - 139px );
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(255, 255, 255);
+}
+/* 헤더 링크문자 */
+#headerLinks a {
+	text-decoration: none;
+	color: rgba(146,146,146,1.00);
+	padding-left: 66px;
+	font-size: 14px;
+}
+/* 미니언 이미지 */
+#flower {
+	text-align: right;	
+	padding-right: 225px;
+	
+}
+
+/* 홍보문구 */
+#offer {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: rgba(90, 83, 116, 0.7);
+	color: rgb(32, 19, 19);
+	padding-left: 115px;
+	padding-top: 57px;
+	padding-bottom: 57px;
+}
+/* 메뉴포함 컨텐츠페이지  */
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+}
+/* 페이지명 */
+#todaybook {
+	font-family: 'Montserrat', sans-serif;
+	clear: both;
+	background-color: rgba(220,235,250,.7);
+	color: rgb(202, 36, 105);
+	padding-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+/* 메뉴영역 */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	float: left;
+	width: 20%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color: rgba(220,235,250,.7);
+	padding-top: 36px;
+	height: 784px;
+}
+/* 검색창 */
+#content .sidebar #search {
+	width: 80%;
+	border-radius: 0px;
+	height: 30px;
+	text-align: left;
+	color: rgba(100,100,100,1.00);
+	font-size: 14px;
+	;
+	margin-bottom: 21px;
+}
+/* 상세메뉴 */
+#content .sidebar #menubar {
+	text-align: left;
+	color: rgba(146,146,146,1.00);
+	position: relative;
+	left: 0%;
+}
+/* 상세메뉴 목록 */
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+/*Links in sidebar */
+.sidebar #menubar .menu ul li a {
+	color: rgba(146,146,146,1.00);
+	text-decoration: none;
+}
+.sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+}
+/* 메뉴 큰제목 */
+#menubar .menu h1 {
+	font-size: 14px;
+}
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+	font-size: 14px;
+}
+/* 메뉴영역 */
+.sidebar #menubar .menu {
+	margin-bottom: 29px;
+}
+
+/* 전체페이지 */
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+/* 컨텐츠 상세페이지 */
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+/* 상품영역 */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* 상품정보 */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	
+	width: 22%;
+}
+/* 상품가격 */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+/* 상세상품 */
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: rgba(146,146,146,1.00);
+	white-space: pre-wrap;
+}
+/* BUY버튼 */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: rgba(210,225,250,1.00);
+	height: 30px;
+	color: rgb(15, 15, 15);
+	border-style: none;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+/* 상품 이미지 */
+.productInfo div img {
+	width: 80%;
+}
+/* footer */
+#mainWrapper footer {
+	clear: both;
+	overflow: auto;
+	background-color: rgba(220,235,250,1.00);
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	padding-top: 22px;
+	padding-left: 22px;
+	text-align: center;
+	padding-bottom: 22px;
+	padding-right: 22px;
+}
+/* footer div영역 */
+#mainWrapper footer div {
+	width: 27%;
+	float: left;
+	padding-left: 4%;
+	padding-right: 2%;
+	color: rgba(146,146,146,1.00);
+	text-align: justify;
+}
+/* footer 링크 */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+footer .footerlinks {
+	margin-top: -15px;
+}
+.buyButton2 {
+	position: relative;
+	float:right;
+	width: 15%;
+	background-color: rgba(210,225,250,1.00);
+	height: 30px;
+	color: rgba(146,146,146,1.00);
+	border-style: none;
+	font-size: 12px;
+	text-transform: uppercase;	
+}
+.Button3 {
+	position: relative;
+	float: left;
+	width: 55%;
+	background-color: rgba(210,225,250,1.00);
+	height: 70px;
+	color: rgba(146,146,146,1.00);
+	border-style: none;
+	font-size: 12px;
+	text-transform: uppercase;	
+}
+
+#cart {
+	width: 800px;
+	background-color:#F96;
+  }
+  table.basic { 
+	width:100%; 
+	line-height:21px; 
+	border-top: 1px solid #cccccc; 
+	border-left: 1px solid #cccccc; 
+	border-collapse: collapse; 
+  } 
+  table.basic th, table.basic td { 
+	color:#678197; 
+	text-align:center; 
+	border-right: 1px solid #cccccc; 
+	border-bottom: 1px solid #cccccc; 
+	padding: 3px 0; 
+	text-align:center; 
+  } 
+  table.basic th { 
+	background-color: #eeeeee; 
+  } 
+  table.basic tr {
+	background-color:#FFF;
+  }
+  table.basic tr:nth-child(odd) {
+	background-color:#EEFAFD;
+  }
+  
